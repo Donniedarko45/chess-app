@@ -1,4 +1,4 @@
-npm install @shadcn/ui @radix-ui/react-icons chess.js socket.io-client recharts next-auth prisma @prisma/client tailwindcss @prisma/client postgres geist @next-auth/prisma-adapter lucide-react
+npm install @shadcn/ui @radix-ui/react-icons chess.js socket.io-client recharts next-auth prisma @prisma/client tailwindcss @prisma/client postgres geist @next-auth/prisma-adapter lucide-react zod react-hook-form @hookform/resolvers
 npm install prisma --save-dev 
 npx prisma generate
 npx prisma db push 
@@ -7,3 +7,4 @@ npx shadcn-ui@latest add dialog button input label card avatar progress
 npx shadcn-ui@latest add switch select toast 
 npx shadcn-ui@latest add table 
 npx shadcn-ui@latest add dropdown-menu 
+npx shadcn-ui@latest add form 
