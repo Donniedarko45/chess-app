@@ -1,8 +1,8 @@
 import { getServerSession } from 'next-auth'
 import { redirect } from 'next/navigation'
-import { prisma } from '@/lib/prisma'
-import { UserProfile } from '@/components/profile/UserProfile'
-import { authOptions } from '@/lib/auth'
+import { prisma } from '@/src/lib/prisma'
+import { UserProfile } from '@/src/components/profile/UserProfile'
+import { authOptions } from '@/src/lib/auth'
 
 async function getUserProfile(userId: string) {
   const user = await prisma.user.findUnique({

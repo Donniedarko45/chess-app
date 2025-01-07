@@ -1,7 +1,8 @@
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import localFont from 'next/font/local'
-import { Providers } from '@/components/providers'
+import { Providers } from '../components/providers'
+import { Navigation } from '@/components/layout/Navigation'
 
 const cabinetGrotesk = localFont({
   src: '../assets/fonts/CabinetGrotesk-Variable.woff2',
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${GeistSans.variable} ${GeistMono.variable} ${cabinetGrotesk.variable} font-sans bg-base text-text`}>
         <Providers>
+          <Navigation />
           {children}
         </Providers>
       </body>

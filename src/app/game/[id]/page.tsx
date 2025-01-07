@@ -1,8 +1,8 @@
 import { getServerSession } from 'next-auth'
 import { redirect } from 'next/navigation'
-import { prisma } from '@/lib/prisma'
-import { GameRoom } from '@/components/game/GameRoom'
-import { authOptions } from '@/lib/auth'
+import { prisma } from '@/src/lib/prisma'
+import { GameRoom } from '@/src/components/game/GameRoom'
+import { authOptions } from '@/src/lib/auth'
 
 export default async function GamePage({
   params,

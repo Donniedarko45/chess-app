@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useSocket } from '@/hooks/useSocket'
+import { useSocket } from '@/src/hooks/useSocket'
 import { ChessBoard } from './ChessBoard'
 import { ChatBubble } from '../chat/ChatBubble'
 
